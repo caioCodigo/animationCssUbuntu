@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.fundo{
+    background-color: rgba(160, 160, 160, 0.986);
+    height: 280px;
+    width: 100%;
+    padding-top: 50px;
+}
+.pop-up{
+    width: 50%;
+    border: 1px solid black;
+    display: block;
+    justify-content: center;
+    transform: translateX(300px);
+    animation-name: vitoria;
+    animation-duration: 2s;
+    animation-delay: 8s;
+    animation-fill-mode: backwards;
+    border-radius: 200px;
+    box-shadow: 2px 5px 13px black;
+    
+
+}
+.pop-up p {
+    font-size: 50px;
+    color: gold;
+    text-align: center;
+}
+.pop-up img {
+    margin-left: 300px;
+}
+.camaro{
+    
+    width: 200px;
+    height: 100px;
+     
+    /* height: 80px;
+    width: 100px; */
+    animation-name: drive;
+    animation-duration: 2.4s;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 3;
+}
+
+.porche{
+    /* margin-top:10px;  */
+    height: 100px;
+    width: 150px;
+    animation-name: drive;
+    animation-duration: 2.9s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: 3;
+}
+.linha{
+    color: white;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+@keyframes drive{
+    from{transform: translateX(0)}
+    to{transform: translateX(1500px)}
+}
+@keyframes vitoria{
+    from{transform: translateX(-700px)}
+    to{transform: translateX(300px)}
+}
